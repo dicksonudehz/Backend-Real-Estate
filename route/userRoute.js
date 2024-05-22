@@ -10,6 +10,7 @@ import {
 import jwtCheck from "../config/authconfig.js";
 
 const router = express.Router(); 
+// this is the user route definintion 
 
 router.post("/register", jwtCheck, createUser);
 router.post("/bookedVisit/:id", jwtCheck, bookedVisitByUser);
